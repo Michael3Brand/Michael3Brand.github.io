@@ -1,7 +1,7 @@
 window.onload = function () {
 
     // Include NavigationBar into header div
-    var header = '<div class="header"><img id="header_logo" src="./images/logo_michael-brand_homepage.png" ></div> <div class="nav" id="navigation"> <ul> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> </ul> </div>';
+    var header = '<div class="header"><img id="header_logo" src="./assets/logo/logo_michael-brand_homepage.png" ></div> <div class="nav" id="navigation"> <ul> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> <li><a href="index.html">Home</a></li> </ul> </div>';
 
     // Mark active tab
     var pathname = window.location.pathname;
