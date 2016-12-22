@@ -24,7 +24,7 @@ window.onload = function () {
     headerDiv.innerHTML = header;
 
     // Set Page footer
-    var footer = '<div class="footerContent"> </div style="text-align: center; display: inline-block;"><div class="MichaelBrand"><p><a class="download" onclick="window.open(this.href); return false;" title="http://michael-brand95.rhcloud.com/" href="http://michael-brand95.rhcloud.com" onkeypress="window.open(this.href); return false;"  >Erstellt von Michael Brand<br /></a></p></div>'
+    var footer = '<div class="footerContent"> </div style="text-align: center; display: inline-block;"><div class="MichaelBrand"><p><a class="download" onclick="window.open(this.href); return false;" title="https://Michael3Brand.github.io/" href="https://Michael3Brand.github.io/" onkeypress="window.open(this.href); return false;"  >Erstellt von Michael Brand<br /></a></p></div>'
 
     var footerDiv = document.getElementById("footerContent");
     footerDiv.innerHTML = footer;
