@@ -1,0 +1,363 @@
+html,
+body {
+    font-family: 'Kristen ITC', 'Arial-BoldMT', 'Arial', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background: lightgreen;
+    background: linear-gradient(-20deg, #fff, #fff);
+    background-attachment: fixed;
+        height: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*@media (min-width: 768px) {
+  body, html {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  body, html {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body, html {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}*/
+
+/*.navgitation*/
+
+
+/*
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    background: linear-gradient(-80deg, #444, #222);
+    position: inherit;
+    top: 0;
+    width: 1024px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+*/
+
+.nav .active {
+    /*    background-color: #4CAF50;*/
+    background: #000;
+    background: linear-gradient(#111, #555, #111);
+    background: -moz-linear-gradient(#111, #555, #111);
+    background: -webkit-linear-gradient( #111, #444, #111);
+}
+
+.header {
+    background: linear-gradient(-20deg, #93c4ff, #97c5ff);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-align: left;
+}
+
+.headerSeperator {
+    border-style: groove;
+    border-width: 0px;
+    border-color: #333;
+    width: auto !important;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+}
+
+.navigationFixedCompensation {
+    margin-top: 71px;
+}
+
+
+/*textbox_default_layout*/
+
+
+/*.textbox_default_layout {
+    border-style: ridge groove groove ridge;
+    border-color: lightgreen;
+    border-radius: 30px;
+    border-width: 5px;
+    margin: 20px 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #BBB;
+    background: linear-gradient(-20deg, #DDD, #BBB);
+    background: linear-gradient(to right, rgba(221, 221, 221, 0.8), rgba(187, 187, 187, 0.8));
+}*/
+
+.textbox_default_layout {
+    border-style: solid;
+    border-color: #8fd3ff;
+    border-width: 2px;
+    margin: 20px 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #BBB;
+    background: rgba(210, 238, 255, 0.86);
+    background: rgba(210, 238, 255, 0.86);
+}
+
+.textbox_default_layout h1 {
+    margin: 0px 0px 0px 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.contentPosition {
+    height: auto;
+    margin: auto;
+    text-align: center;
+    border-color: #00a;
+    background: #333;
+    background: linear-gradient(-20deg, #999, #888);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.background { height: 100%; background: #8998b9;}
+
+.contentImage {
+    border-style: solid;
+    border-color: #333;
+    margin: 0px 10px 10px 10px;
+    padding: 3px
+}
+
+.MichaelBrand {
+    display: inherit;
+    float: right;
+    width: 220px;
+
+}
+
+/*::-webkit-scrollbar {
+        width: 16px;
+        background-color: #cccccc;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: grey;
+        border: 1px solid white;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background-color: green;
+        border: 1px solid #333333;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 1px black solid;
+
+        -webkit-box-shadow: 0 0 6px gray inset;
+    }*/
+
+
+/*
+.content div .alignCenterContent {
+    clear: both;
+}
+*/
+
+.picture_default_layout {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.nav {
+    /*        margin: 100px auto;*/
+    /*        text-align: center;*/
+    max-width: inherit;
+}
+
+.nav ul ul {
+    display: none;
+}
+
+.nav ul li:hover > ul {
+    display: block;
+}
+
+.nav ul {
+    background: #333;
+    background: linear-gradient( #585858, black);
+    background: -moz-linear-gradient( #585858, black);
+    background: -webkit-linear-gradient( #585858, black);
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    margin: auto;
+    width: inherit;
+}
+
+.nav ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.nav ul li {
+    text-align: center;
+    display: inline-block;
+}
+
+.nav ul li:hover {
+    background: #000;
+    background: linear-gradient(#111, #555, #111);
+    background: -moz-linear-gradient(#111, #555, #111);
+    background: -webkit-linear-gradient( #111, #555, #111);
+}
+
+.nav ul li:hover a {
+    color: #eee;
+}
+
+.nav ul li a {
+    display: table;
+    padding: 14px 16px;
+    color: #eee;
+    text-decoration: none;
+    margin: auto;
+
+}
+
+.nav ul ul {
+    background: #333;
+    background: linear-gradient( #333, #555, #333);
+    background: -moz-linear-gradient( #333, #555, #333);
+    background: -webkit-linear-gradient( #333, #555, #333);
+    border-color: #222;
+    border-style: solid;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: auto;
+}
+
+.nav ul ul li a:hover {
+    background: #000;
+    background: linear-gradient(#111, #555, #111);
+    background: -moz-linear-gradient(#111, #555, #111);
+    background: -webkit-linear-gradient( #111, #555, #111);
+}
+
+.nav ul ul li {
+    float: none;
+    border: 0px solid #000;
+    /*    border-bottom: 1px solid #575f6a;*/
+    position: relative;
+}
+
+.nav ul ul li a {
+    padding: 14px 16px;
+    color: #eee;
+}
+
+.nav ul ul li a:hover {
+    background: #333;
+}
+
+.nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.footer {
+    height: 90px;
+    background: #333;
+}
+
+.footer div {
+    color: white;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    /* Set the margin-left and margin-right automatically set */
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.footerContent {
+    max-width: 560px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footerLink {
+    color: white;
+}
+
+.download {
+    color: #519fff;
+    text-decoration: none;
+/*    background: lightgrey;*/
+/*
+    border-style: solid;
+    border-width: 1px;
+*/
+}
+
+.enumeration {
+    color: #333;
+    padding: 20px;
+}
+
+.enumeration a {
+    color: #000;
+    text-decoration: none;
+}
+
+.enumeration li {
+    margin: 20px;
+    display: block;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+}
