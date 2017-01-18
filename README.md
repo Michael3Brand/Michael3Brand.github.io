@@ -1,2 +1,5 @@
 # Michael3Brand.github.io
-About Michael3Brand
+
+![Logo](./assets/logo/logo_michael-brand_homepage.png "Michael Brand")
+
+***
