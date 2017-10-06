@@ -1,0 +1,19 @@
+@import 'colors';
+.ScrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.ScrollTopButton:hover {
+    background-color: $primary-color;
+}

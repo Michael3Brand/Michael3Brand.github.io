@@ -1,0 +1,304 @@
+@import 'colors';
+@import 'important';
+@import 'transitions';
+body {
+    position: relative;
+    color: $dark-grey-color;
+    font-family: medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif!important;
+}
+
+::selection {
+    background: $primary-color-dark;
+}
+
+// Navbar Transition to fixed
+.navbar-fixed-space {
+    height: 72px;
+}
+
+// End Navbar Transition to fixed
+ ::-moz-selection {
+    background: $primary-color-dark;
+}
+
+section:nth-of-type(2n) {
+    background-color: $section-background-color;
+}
+
+a {
+    color: $dark-grey-color;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -65px;
+    visibility: hidden;
+}
+
+.button {
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: $light-color;
+}
+
+.button-success {
+    @extend .button;
+    background: $success-color;
+    color: $light-color;
+}
+
+.button-error {
+    @extend .button;
+    background: $error-color;
+    color: $dark-color;
+}
+
+.button-error:hover() {
+    background: pink;
+}
+
+.test {
+    background: blue;
+    padding: 50px;
+    border-style: solid;
+    color: wheat;
+    border-color: red;
+    // margin: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.initialcase {
+    text-transform: initial;
+}
+
+.background {
+    background-color: $background-color;
+    background-image: $background-color;
+}
+
+.title-and-subtitle {
+    height: 50px;
+}
+
+.title-and-subtitle h2 {
+    color: $primary-color-dark;
+}
+
+.title-and-subtitle span {
+    color: $primary-color-light
+}
+
+
+/*.list-group-style-type-none {
+    list-style-type: none;
+}*/
+
+.list-group-item-background-none {
+    background: transparent;
+    border: none;
+}
+
+
+/*.list-group-row-margin li {
+    position: relative;
+}
+
+.list-group-row-margin li div {
+    position: absolute;
+    left: 0;
+}*/
+
+.programmingItem {
+    @extend .transitionAllEase;
+    @extend .transitionDurationMedium;
+}
+
+.programmingItem:hover {
+    @extend .transitionSecondaryColorDark;
+    @extend .transitionDurationMedium;
+}
+
+.glossaryItem {
+    @extend .widthFitContent;
+    margin-right: 20px;
+    float: left;
+    padding: 5px 30px 5px 30px !important;
+    margin-bottom: 15px;
+    font-size: large;
+    @extend .transitionAllEase;
+    @extend .transitionDurationMedium;
+}
+
+.glossaryItem:hover {
+    @extend .transitionSecondaryColorDark;
+    @extend .transitionDurationMedium;
+    /* background-color: $secendary-color-dark !important;
+    color: $light-color !important;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s; */
+}
+
+
+/* .glossaryItem:first-of-type {
+    @extend .widthFitContent;
+    height: fit-content !important;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.glossaryItem:last-of-type {
+    @extend .widthFitContent;
+    height: fit-content !important;
+    margin-left: 0px;
+    margin-right: 20px;
+} */
+
+.glossaryContainer {
+    display: inline-block;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: initial;
+    margin-bottom: 0px;
+    //@extend .displayFlex;
+}
+
+.contactImage {
+    border: 2px solid $primary-color;
+    padding: 70px 30px 30px 30px;
+    float: left;
+    width: 100%;
+    position: relative;
+    //box-sizing: border-box;
+}
+
+.contactImage figure {
+    position: absolute;
+    margin-top: -60px;
+    top: 0;
+    left: 50%;
+    margin-left: -60px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.contactImage figure img {
+    width: 120px;
+    border: 2px solid $primary-color;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    @extend .transitionDurationMedium;
+    @extend .transitionAllEase;
+}
+
+.contactImage figure img:hover {
+    @extend .transitionScale;
+    @extend .transitionDurationMedium;
+}
+
+.contactImage h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contactImage .contactName {
+    color: $primary-color-dark;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.contactSocial {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactSocial li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.contactSocial li a {
+    font-size: 16px;
+    display: table;
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+
+/* .contactSocial li a:hover() {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+
+.contactSocial li a i {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: larger;
+}
+
+.contactSocial.contactSocialHighlight a {
+    background: $primary-color;
+    color: $light-color;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+[class^="fa-"],
+[class*=" fa-"] {
+    //font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.SocialIconItem {
+    @extend .transitionAllEase;
+    @extend .transitionDurationMedium;
+}
+
+.SocialIconItem:hover {
+    @extend .transitionSecondaryColorDark;
+    @extend .transitionDurationMedium;
+}
+
+footer {
+    height: 40px;
+    margin-top: 50px;
+    background-image: $footer-background-color;
+}
+
+
+/* footer {
+    width:100%;
+    background-color:#CCC;
+    min-height:100px;    
+  } */
+
+footer .column {
+    width: 100%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}

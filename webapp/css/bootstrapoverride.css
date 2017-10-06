@@ -1,0 +1,131 @@
+/* $primary-color-light: #47D27C;
+$primary-color: #03E534;
+$primary-color-dark: #00B318; */
+/* $secendary-color-light: #BE3737;
+$secendary-color: #993A3A;
+$secendary-color-dark: #570C0C; */
+/* $primary-color-light: #47D27C;
+$primary-color: #03E534;
+$primary-color-dark: #00B318; */
+/* $secendary-color-light: #BE3737;
+$secendary-color: #993A3A;
+$secendary-color-dark: #570C0C; */
+.transitionDurationShort {
+  transition-duration: 200ms;
+}
+
+.transitionDurationMedium, .navbar-fixed-top {
+  transition-duration: 500ms;
+}
+
+.transitionDurationLong {
+  transition-duration: 1500ms;
+}
+
+.transitionPropertyAll, .transitionAllEase, .navbar-fixed-top, .transitionSecondaryColorDark, .transitionPrimaryLight {
+  transition-property: all;
+}
+
+.transitionTimingFunctionEase, .transitionAllEase, .navbar-fixed-top, .transitionScale, .transitionSecondaryColorDark {
+  transition-timing-function: ease;
+}
+
+.transitionScale {
+  transform: scale(1.1);
+  transition-property: transform;
+}
+
+.transitionSecondaryColorDark {
+  background-color: #344954 !important;
+  color: #fff !important;
+}
+
+.transitionPrimaryLight {
+  background-color: #47a4d2;
+  color: #000;
+  transition-timing-function: ease-in;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #039be5;
+}
+
+.jumbotron {
+  background: #47a4d2;
+}
+
+.navbar-fixed-top {
+  width: inherit;
+  margin: auto;
+  top: 25px;
+  transition: top 0.1s ease;
+  background-image: repeating-linear-gradient(to bottom, #006db3 0%, #039be5 100%);
+  border-color: #006db3;
+  border-style: inset;
+  border-width: medium;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:focus,
+.navbar-fixed-top .navbar-nav > li > a:hover {
+  color: #b1b1b1;
+  background-color: transparent;
+}
+
+.navbar-fixed-top .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-fixed-top .navbar-nav > .active > a:focus,
+.navbar-fixed-top .navbar-nav > .active > a:hover {
+  color: #039be5;
+  color: white;
+  background-color: #344954;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:focus,
+.navbar-fixed-top .navbar-nav > li > a:hover {
+  color: #039be5;
+  color: white;
+  background-color: #3d5765;
+}
+
+.navbar-fixed-top .navbar-brand {
+  color: #fff;
+}
+
+.navbar-toggle {
+  background-color: #039be5;
+}
+
+.navbar-toggle .icon-bar {
+  background: #006db3;
+}
+
+.navbar-animation {
+  margin: auto;
+  width: inherit;
+  top: 0px;
+  transition: top 0.1s ease;
+  border: 0;
+  background-image: repeating-linear-gradient(to bottom, #006db3 3%, #039be5 97%);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-animation {
+    width: 100%;
+  }
+  .navbar-header {
+    position: absolute;
+  }
+  .navbar-collapse.collapse {
+    display: flex !important;
+  }
+  .navbar-nav {
+    margin: auto;
+  }
+}

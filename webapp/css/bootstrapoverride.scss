@@ -1,0 +1,87 @@
+@import 'colors';
+@import 'transitions';
+.container {
+    margin-top: 20px;
+}
+
+.active {
+    background-color: $primary-color;
+}
+
+.jumbotron {
+    background: $primary-color-light;
+}
+
+.navbar-fixed-top {
+    @extend .transitionAllEase;
+    @extend .transitionDurationMedium;
+    width: inherit;
+    margin: auto;
+    top: 25px;
+    transition: top 0.1s ease;
+    background-image: $gradient-background-color;
+    border-color: $primary-color-dark;
+    border-style: inset;
+    border-width: medium;
+}
+
+.navbar-fixed-top .navbar-nav>li>a:focus,
+.navbar-fixed-top .navbar-nav>li>a:hover {
+    color: $light-color-gradiation;
+    background-color: transparent;
+}
+
+.navbar-fixed-top .navbar-nav>li>a {
+    color: $light-color;
+}
+
+.navbar-fixed-top .navbar-nav>.active>a,
+.navbar-fixed-top .navbar-nav>.active>a:focus,
+.navbar-fixed-top .navbar-nav>.active>a:hover {
+    color: $primary-color;
+    color: white;
+    background-color: $secendary-color-dark;
+}
+
+.navbar-fixed-top .navbar-nav>li>a:focus,
+.navbar-fixed-top .navbar-nav>li>a:hover {
+    color: $primary-color;
+    color: white;
+    background-color: $secendary-color;
+}
+
+.navbar-fixed-top .navbar-brand {
+    color: $light-color;
+}
+
+.navbar-toggle {
+    background-color: $primary-color;
+}
+
+.navbar-toggle .icon-bar {
+    background: $primary-color-dark;
+}
+
+.navbar-animation {
+    margin: auto;
+    width: inherit;
+    top: 0px;
+    transition: top 0.1s ease;
+    border: 0;
+    background-image: $navbar-background-color;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-animation {
+        width: 100%;
+    }
+    .navbar-header {
+        position: absolute;
+    }
+    .navbar-collapse.collapse {
+        display: flex!important;
+    }
+    .navbar-nav {
+        margin: auto;
+    }
+}
