@@ -1,0 +1,45 @@
+@import 'colors';
+.transitionDurationShort {
+    transition-duration: 200ms;
+}
+
+.transitionDurationMedium {
+    transition-duration: 500ms;
+}
+
+.transitionDurationLong {
+    transition-duration: 1500ms;
+}
+
+.transitionPropertyAll {
+    transition-property: all;
+}
+
+.transitionTimingFunctionEase {
+    transition-timing-function: ease;
+}
+
+.transitionAllEase {
+    @extend .transitionPropertyAll;
+    @extend .transitionTimingFunctionEase;
+}
+
+.transitionScale {
+    transform: scale(1.1);
+    transition-property: transform;
+    @extend .transitionTimingFunctionEase;
+}
+
+.transitionSecondaryColorDark {
+    background-color: $secendary-color-dark !important;
+    color: $light-color !important;
+    @extend .transitionPropertyAll;
+    @extend .transitionTimingFunctionEase;
+}
+
+.transitionPrimaryLight {
+    background-color: $primary-color-light;
+    color: $dark-color;
+    @extend .transitionPropertyAll;
+    transition-timing-function: ease-in;
+}

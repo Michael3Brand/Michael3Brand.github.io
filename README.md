@@ -1,18 +1,18 @@
-# Michael3Brand.github.io
+# Website of Michael Brand
 
-![Logo](./assets/logo/logo_michael-brand_homepage.png "Michael Brand")
+![Logo](./webapp/ressources/logo_michael-brand_homepage_Banner.png "Michael Brand")
 
-***
+## Introduction
+This is the Repository with the Source of my Website [https://michael3brand.github.com](https://michael3brand.github.com).
 
-# Run
-## Run Project with Webserver for test porpose.
+## Used stuff
+I created it using differnt Librarys, etc. In the following I will list some of them.
 
-You need npm to be installed.
-
-Use Commands:
-
-    npm install
-
-and
-    
-    npm start
+* Bootstrap 3
+* jQuery
+* zoom.js
+* hover.js
+* animate.css
+* font-awesome
+* Sass (CSS Preprocessor)
+* Electron
