@@ -3,11 +3,48 @@ window.onscroll = function() {
 };
 
 window.onload = function() {
-    //checkToTopVisiblility();
+
     $('body').scrollspy({ target: '#navbar-example' });
     hideNavbarOnClick();
+    setThemeSwitcher();
+
+}
+
+loadThemeFromLocalStorage();
+/* document.on
+window.onBeforeRender = function() {
+    loadThemeFromLocalStorage();
+} */
+
+function loadThemeFromLocalStorage() {
+    if (localStorage.getItem("theme")) {
+        activateTheme(localStorage.getItem("theme"));
+    }
+}
+
+function saveThemeToLocalStorage(theme) {
+    localStorage.setItem("theme", theme);
+}
+
+function activateTheme(theme) {
+    $('link[data-stylesheet="stylesheet"]').attr('href', theme);
+    saveThemeToLocalStorage(theme);
+}
 
 
+function setThemeSwitcher() {
+    $('#themeSwicher-main').click(function() {
+        var theme = "./css/theme-main.min.css";
+        activateTheme(theme);
+    });
+    $('#themeSwicher-green').click(function() {
+        var theme = "./css/theme-green.min.css";
+        activateTheme(theme);
+    });
+    $('#themeSwicher-red').click(function() {
+        var theme = "./css/theme-red.min.css";
+        activateTheme(theme);
+    });
 }
 
 $(function() {

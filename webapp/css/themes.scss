@@ -1,0 +1,17 @@
+@import 'colors-main';
+.theme-main {
+    background: $primary-color;
+    color: $secendary-color;
+}
+
+@import 'colors-green';
+.theme-green {
+    background: $primary-color;
+    color: $secendary-color;
+}
+
+@import 'colors-red';
+.theme-red {
+    background: $primary-color;
+    color: $secendary-color;
+}

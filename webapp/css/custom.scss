@@ -1,4 +1,4 @@
-@import 'colors';
+//@import 'colors';
 @import 'important';
 @import 'transitions';
 body {
@@ -77,6 +77,9 @@ a.anchor {
 }
 
 .background {
+    @extend .transitionAllEase;
+    //@extend .transitionDurationMedium;
+    transition-duration: 5000ms;
     background-color: $background-color;
     background-image: $background-color;
 }
@@ -301,4 +304,25 @@ footer .column {
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
+}
+
+.themeSwitcherMenu {
+    position: absolute;
+    padding-left: 10px;
+    float: left;
+    height: 40px;
+    padding: 3px;
+    border-spacing: 5px;
+}
+
+.themeSwitcherButton {
+    border-style: solid;
+    border-width: 2px;
+    width: 25px;
+    height: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 15%;
 }
