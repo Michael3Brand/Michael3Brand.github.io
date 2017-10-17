@@ -1,0 +1,546 @@
+/*!
+ * styles.css
+ * Version: 1.0.0
+ * Author: Michael Brand
+ * Author URL: https://michael3brand.github.io/
+ * Github: https://github.com/Michael3Brand
+
+ * styles.css Copyright Michael Brand 2017. Generated with Sass.
+ */
+.theme-main {
+  background: #039be5;
+  color: #3d5765;
+}
+
+.theme-green {
+  background: #22c044;
+  color: #0c4057;
+}
+
+/* $primary-color-light: #c52626;
+$primary-color: #af2222;
+$primary-color-dark: #9b1f1f; */
+/* $primary-color-light: #BE3737;
+$primary-color: #993A3A;
+$primary-color-dark: #570C0C; */
+.theme-red {
+  background: #eb443f;
+  color: #212024;
+}
+
+.transitionDurationShort {
+  transition-duration: 200ms;
+}
+
+.transitionDurationMedium, .navbar-fixed-top, .programmingItem, .programmingItem:hover, .glossaryItem, .glossaryItem:hover, .contactImage figure img, .contactImage figure img:hover, .SocialIconItem, .SocialIconItem:hover {
+  transition-duration: 500ms;
+}
+
+.transitionDurationLong {
+  transition-duration: 1500ms;
+}
+
+.transitionPropertyAll, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover, .transitionPrimaryLight {
+  transition-property: all;
+}
+
+.transitionTimingFunctionEase, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionScale, .contactImage figure img:hover, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  transition-timing-function: ease;
+}
+
+.transitionScale, .contactImage figure img:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+}
+
+.transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  background-color: #092c3b !important;
+  color: #fff !important;
+}
+
+.transitionPrimaryLight {
+  background-color: #2ec74d;
+  color: #000;
+  transition-timing-function: ease-in;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #22c044;
+}
+
+.jumbotron {
+  background: #2ec74d;
+}
+
+.navbar-fixed-top {
+  width: inherit;
+  margin: auto;
+  top: 25px;
+  transition: top 0.1s ease;
+  background-image: repeating-linear-gradient(to bottom, #1fa33a 0%, #22c044 100%);
+  border-color: #1fa33a;
+  border-style: inset;
+  border-width: medium;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:focus,
+.navbar-fixed-top .navbar-nav > li > a:hover {
+  color: #b1b1b1;
+  background-color: transparent;
+}
+
+.navbar-fixed-top .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-fixed-top .navbar-nav > .active > a:focus,
+.navbar-fixed-top .navbar-nav > .active > a:hover {
+  color: #22c044;
+  color: white;
+  background-color: #092c3b;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:focus,
+.navbar-fixed-top .navbar-nav > li > a:hover {
+  color: #22c044;
+  color: white;
+  background-color: #0c4057;
+}
+
+.navbar-fixed-top .navbar-brand {
+  color: #fff;
+}
+
+.navbar-toggle {
+  background-color: #22c044;
+}
+
+.navbar-toggle .icon-bar {
+  background: #1fa33a;
+}
+
+.navbar-animation {
+  margin: auto;
+  width: inherit;
+  top: 0px;
+  transition: top 0.1s ease;
+  border: 0;
+  background-image: repeating-linear-gradient(to bottom, #1fa33a 3%, #22c044 97%);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-animation {
+    width: 100%;
+  }
+  .navbar-header {
+    position: absolute;
+  }
+  .navbar-collapse.collapse {
+    display: flex !important;
+  }
+  .navbar-nav {
+    margin: auto;
+  }
+}
+
+.widthFitContent, .glossaryItem {
+  width: fit-content !important;
+}
+
+.displayFlex {
+  display: flex !important;
+}
+
+.paddingInitial {
+  padding: initial !important;
+}
+
+.marginBottomMedium {
+  margin-bottom: 100px !important;
+}
+
+.transitionDurationShort {
+  transition-duration: 200ms;
+}
+
+.transitionDurationMedium, .navbar-fixed-top, .programmingItem, .programmingItem:hover, .glossaryItem, .glossaryItem:hover, .contactImage figure img, .contactImage figure img:hover, .SocialIconItem, .SocialIconItem:hover {
+  transition-duration: 500ms;
+}
+
+.transitionDurationLong {
+  transition-duration: 1500ms;
+}
+
+.transitionPropertyAll, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover, .transitionPrimaryLight {
+  transition-property: all;
+}
+
+.transitionTimingFunctionEase, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionScale, .contactImage figure img:hover, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  transition-timing-function: ease;
+}
+
+.transitionScale, .contactImage figure img:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+}
+
+.transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  background-color: #092c3b !important;
+  color: #fff !important;
+}
+
+.transitionPrimaryLight {
+  background-color: #2ec74d;
+  color: #000;
+  transition-timing-function: ease-in;
+}
+
+body {
+  position: relative;
+  color: #333;
+  font-family: medium-ui-sans-serif-text-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+::selection {
+  background: #1fa33a;
+}
+
+.navbar-fixed-space {
+  height: 72px;
+}
+
+::-moz-selection {
+  background: #1fa33a;
+}
+
+section:nth-of-type(2n) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+a {
+  color: #333;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -65px;
+  visibility: hidden;
+}
+
+.button, .button-success, .button-error {
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #fff;
+}
+
+.button-success {
+  background: #008000;
+  color: #fff;
+}
+
+.button-error {
+  background: #f00;
+  color: #000;
+}
+
+.button-error:hover {
+  background: pink;
+}
+
+.test {
+  background: blue;
+  padding: 50px;
+  border-style: solid;
+  color: wheat;
+  border-color: red;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.initialcase {
+  text-transform: initial;
+}
+
+.background {
+  transition-duration: 5000ms;
+  background-color: repeating-linear-gradient(to bottom right, #d0fbd9 0%, #709c88 100%);
+  background-image: repeating-linear-gradient(to bottom right, #d0fbd9 0%, #709c88 100%);
+}
+
+.title-and-subtitle {
+  height: 50px;
+}
+
+.title-and-subtitle h2 {
+  color: #1fa33a;
+}
+
+.title-and-subtitle span {
+  color: #2ec74d;
+}
+
+/*.list-group-style-type-none {
+    list-style-type: none;
+}*/
+.list-group-item-background-none {
+  background: transparent;
+  border: none;
+}
+
+/*.list-group-row-margin li {
+    position: relative;
+}
+
+.list-group-row-margin li div {
+    position: absolute;
+    left: 0;
+}*/
+.glossaryItem {
+  margin-right: 20px;
+  float: left;
+  padding: 5px 30px 5px 30px !important;
+  margin-bottom: 15px;
+  font-size: large;
+}
+
+.glossaryItem:hover {
+  /* background-color: $secendary-color-dark !important;
+    color: $light-color !important;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s; */
+}
+
+/* .glossaryItem:first-of-type {
+    @extend .widthFitContent;
+    height: fit-content !important;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.glossaryItem:last-of-type {
+    @extend .widthFitContent;
+    height: fit-content !important;
+    margin-left: 0px;
+    margin-right: 20px;
+} */
+.glossaryContainer {
+  display: inline-block;
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: initial;
+  margin-bottom: 0px;
+}
+
+.contactImage {
+  border: 2px solid #22c044;
+  padding: 70px 30px 30px 30px;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.contactImage figure {
+  position: absolute;
+  margin-top: -60px;
+  top: 0;
+  left: 50%;
+  margin-left: -60px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.contactImage figure img {
+  width: 120px;
+  border: 2px solid #22c044;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.contactImage h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.contactImage .contactName {
+  color: #1fa33a;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.contactSocial {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactSocial li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.contactSocial li a {
+  font-size: 16px;
+  display: table;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+  text-decoration: none;
+}
+
+/* .contactSocial li a:hover() {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+.contactSocial li a i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: larger;
+}
+
+.contactSocial.contactSocialHighlight a {
+  background: #22c044;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+[class^="fa-"],
+[class*=" fa-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  height: 40px;
+  margin-top: 50px;
+  background-image: repeating-linear-gradient(to bottom, #22c044 0%, #1fa33a 100%);
+}
+
+/* footer {
+    width:100%;
+    background-color:#CCC;
+    min-height:100px;    
+  } */
+footer .column {
+  width: 100%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.themeSwitcherMenu {
+  position: absolute;
+  padding-left: 10px;
+  float: left;
+  height: 40px;
+  padding: 3px;
+  border-spacing: 5px;
+}
+
+.themeSwitcherButton {
+  border-style: solid;
+  border-width: 2px;
+  width: 25px;
+  height: 25px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: larger;
+  margin: 5px;
+  border-radius: 15%;
+}
+
+.ScrollTopButton {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1fa33a;
+  color: #2ec74d;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.ScrollTopButton:hover {
+  background-color: #22c044;
+}
+
+.widthFitContent, .glossaryItem {
+  width: fit-content !important;
+}
+
+.displayFlex {
+  display: flex !important;
+}
+
+.paddingInitial {
+  padding: initial !important;
+}
+
+.marginBottomMedium {
+  margin-bottom: 100px !important;
+}
+
+.transitionDurationShort {
+  transition-duration: 200ms;
+}
+
+.transitionDurationMedium, .navbar-fixed-top, .programmingItem, .programmingItem:hover, .glossaryItem, .glossaryItem:hover, .contactImage figure img, .contactImage figure img:hover, .SocialIconItem, .SocialIconItem:hover {
+  transition-duration: 500ms;
+}
+
+.transitionDurationLong {
+  transition-duration: 1500ms;
+}
+
+.transitionPropertyAll, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover, .transitionPrimaryLight {
+  transition-property: all;
+}
+
+.transitionTimingFunctionEase, .transitionAllEase, .navbar-fixed-top, .background, .programmingItem, .glossaryItem, .contactImage figure img, .SocialIconItem, .transitionScale, .contactImage figure img:hover, .transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  transition-timing-function: ease;
+}
+
+.transitionScale, .contactImage figure img:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+}
+
+.transitionSecondaryColorDark, .programmingItem:hover, .glossaryItem:hover, .SocialIconItem:hover {
+  background-color: #092c3b !important;
+  color: #fff !important;
+}
+
+.transitionPrimaryLight {
+  background-color: #2ec74d;
+  color: #000;
+  transition-timing-function: ease-in;
+}

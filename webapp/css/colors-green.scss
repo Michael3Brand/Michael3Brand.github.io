@@ -1,0 +1,25 @@
+// Primary Colors
+$primary-color-light: #2ec74d;
+$primary-color: #22c044;
+$primary-color-dark: rgb(31, 163, 58);
+// Secondary Colors
+$secendary-color-light: #135975;
+$secendary-color: #0c4057;
+$secendary-color-dark: #092c3b;
+// Signal Colors
+$error-color: #f00;
+$warning-color: #ff0;
+$success-color: #008000;
+// Contrast Colors
+$dark-color: #000;
+$light-color: #fff;
+$light-color-gradiation: #b1b1b1;
+$dark-grey-color: #333;
+// Background
+$navbar-background-color: repeating-linear-gradient(to bottom, $primary-color-dark 3%, $primary-color 97%);
+$gradient-background-color: repeating-linear-gradient(to bottom, $primary-color-dark 0%, $primary-color 100%);
+$footer-background-color: repeating-linear-gradient(to bottom, $primary-color 0%, $primary-color-dark 100%);
+$background-color: #9cceff;
+$background-color: repeating-linear-gradient(to bottom right, #d0fbd9 0%, #709c88 100%);
+$dark-gradient-color: repeating-linear-gradient(to bottom, #313131 0%, #444444 100%);
+$section-background-color: rgba(0, 0, 0, 0.05);
